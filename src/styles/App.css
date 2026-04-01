@@ -1,1 +1,116 @@
 
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+.App h1 {
+  background: linear-gradient(to right, #6a11cb, #7b2cbf);
+  color: white;
+  padding: 40px 20px;
+  margin: 0;
+  font-size: 48px;
+}
+
+/* Navigation */
+.App a {
+  text-decoration: none;
+  color: white;
+  background-color: #5a189a;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.App a:hover {
+  background-color: #3c096c;
+}
+
+/* Top bar container */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #6a11cb, #7b2cbf);
+}
+
+/* Refresh button */
+.button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #0d47a1;
+}
+
+/* Section headings */
+h2 {
+  margin-left: 20px;
+}
+
+/* Form */
+form, .posts-list > div:first-child {
+  padding: 20px;
+}
+
+input, select, textarea {
+  margin: 5px;
+  padding: 6px;
+}
+
+/* Posts container */
+.posts-list {
+  padding: 20px;
+}
+
+/* Each post card */
+.posts-list > div {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Post title */
+.posts-list h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* Post text */
+.posts-list p {
+  color: #333;
+}
+
+/* Reaction buttons */
+.posts-list button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.posts-list button:hover {
+  background-color: #ddd;
+}
+
+/* View Post button */
+.posts-list .button {
+  display: inline-block;
+  margin-top: 10px;
+}
