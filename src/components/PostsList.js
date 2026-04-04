@@ -102,7 +102,7 @@ const PostsList = ({ posts, setPosts }) => {
                   </button>
                 ))}
               </div>
-              <Link to={`/posts/${post.id}`} className="button view-btn">
+              <Link to={`/posts/${post.id}`} className="view-btn">
                 View Post
               </Link>
             </article>

@@ -56,12 +56,6 @@ const App = () => {
             <Link to="/">Posts</Link>
             <Link to="/users">Users</Link>
             <Link to="/notifications">Notifications</Link>
-            <button
-              className="button refresh-btn"
-              onClick={() => (window.location.href = "/notifications")}
-            >
-              Refresh Notifications
-            </button>
           </nav>
         </header>
 
