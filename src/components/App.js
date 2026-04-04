@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Notifications from "./Notifications";
 import UserPage from "./UserPage";
 import UsersList from "./UsersList";
@@ -53,18 +53,17 @@ const App = () => {
         <header className="app-header">
           <h1>GenZ</h1>
           <nav className="top-bar">
-            <a href="/">Posts</a>
-            <a href="/users">Users</a>
-            <a href="/notifications">Notifications</a>
-             <button
-            className="button refresh-btn"
-            onClick={() => (window.location.href = "/notifications")}
-          >
-            Refresh Notifications
-          </button>
-       </nav>
+            <Link to="/">Posts</Link>
+            <Link to="/users">Users</Link>
+            <Link to="/notifications">Notifications</Link>
+            <button
+              className="button refresh-btn"
+              onClick={() => (window.location.href = "/notifications")}
+            >
+              Refresh Notifications
+            </button>
+          </nav>
         </header>
-         
 
         <main className="main-content">
           <Switch>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const REACTIONS = ["👍", "❤️", "😂", "😮", "😢"];
 
@@ -101,9 +102,9 @@ const PostsList = ({ posts, setPosts }) => {
                   </button>
                 ))}
               </div>
-              <a href={`/posts/${post.id}`} className="button view-btn">
+              <Link to={`/posts/${post.id}`} className="button view-btn">
                 View Post
-              </a>
+              </Link>
             </article>
           ))}
         </div>

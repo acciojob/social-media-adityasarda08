@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const users = [
   { id: "1", name: "User1" },
@@ -13,10 +14,10 @@ const UsersList = () => {
       <ul className="users-list">
         {users.map((user) => (
           <li key={user.id}>
-            <a href={`/users/${user.id}`} className="user-link">
+            <Link to={`/users/${user.id}`} className="user-link">
               <span className="user-avatar">{user.name[0]}</span>
               <span>{user.name}</span>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

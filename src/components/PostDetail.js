@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const PostDetail = ({ posts, updatePost }) => {
   const { id } = useParams();
@@ -56,7 +56,7 @@ const PostDetail = ({ posts, updatePost }) => {
           </>
         )}
       </div>
-      <a href="/" className="back-link">← Back to Feed</a>
+      <Link to="/" className="back-link">← Back to Feed</Link>
     </div>
   );
 };
